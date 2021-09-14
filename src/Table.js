@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react';
 import Form from './Form.js';
 
@@ -31,15 +32,16 @@ export default class Table extends Form {
     }
 
 }
+*/
 
 
-/*
-import React, { Component } from 'react';
+
+import React from 'react';
 
 class Table extends React.Component {
   render() {
     const items = this.props.items;
-    console.log("datas ",items);
+   // console.log("datas ",items);
     return (
       <div id="Table">
         <table border="1px">
@@ -61,8 +63,10 @@ class Table extends React.Component {
                   <td>{item.password}</td>
                   <td>{item.mobile}</td>
                   <td>{item.message}</td>
-                  <td><button type="button">Update</button></td>
-                  <td><button type="button">Delete</button></td>
+                  <td>
+                    <button type="button" >Update</button>
+                    <button type="button" >Delete</button>
+                  </td>
                 </tr>
               );
             })}
@@ -75,5 +79,5 @@ class Table extends React.Component {
 }
 
 export default Table;
-*/
+
 
